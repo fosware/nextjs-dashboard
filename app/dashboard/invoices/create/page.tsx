@@ -2,6 +2,11 @@ import Form from '@/app/ui/invoices/create-form';
 import Breadcrums from '@/app/ui/invoices/breadcrumbs';
 import { fetchCustomers } from '@/app/lib/data';
 import { Customer } from '../../../lib/definitions';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Create Invoice',
+};
 
 export default async function Page() {
 
